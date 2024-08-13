@@ -10,9 +10,9 @@ const updateStudentGradeByCity = (students, city, list) => {
     }
     return {
       ...student,
-      grade: "N/A",
-    }
+      grade: 'N/A',
+    };
   });
-}
+};
 
 export default updateStudentGradeByCity;
