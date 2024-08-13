@@ -1,5 +1,5 @@
 const getListStudentIds = (list) => {
-  if(!(list instanceof Array)) return [];
+  if (!(list instanceof Array)) return [];
   return list.map((student) => student.id);
 };
 
