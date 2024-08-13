@@ -16,5 +16,5 @@ export function getListStudents() {
       location: 'San Francisco',
     }
   ];
-  console.log(arr);
+  return arr;
 }
