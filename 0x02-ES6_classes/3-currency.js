@@ -4,26 +4,32 @@ class Currency {
     this.name = name;
   }
 
+  /**
+   * @param {String} code
+   */
   set code(code) {
     if (typeof code !== 'string') {
       throw new TypeError('Code must be a string!');
     }
-    this.code = code;
+    this._code = code;
   }
 
   get code() {
-    return this.code;
+    return this._code;
   }
 
+  /**
+   * @param {String} name
+   */
   set name(name) {
     if (typeof name !== 'string') {
       throw new TypeError('name must be a string!');
     }
-    this.code = name;
+    this._name = name;
   }
 
   get name() {
-    return this.code;
+    return this._name;
   }
 
   displayFullCurrency() {
