@@ -44,14 +44,9 @@ class Pricing {
    * @param {Number} conversionRate
    */
   static convertPrice(amount, conversionRate) {
-    if (typeof amount !== 'number') {
-      throw new TypeError('amount must be a number');
+    if (typeof amount !== 'number' || typeof conversionRate !== 'number') {
+      throw new TypeError('parameters must be a numbers');
     }
-
-    if (typeof conversionRate !== 'number') {
-      throw new TypeError('conversionRate must be a number');
-    }
-
     return amount * conversionRate;
   }
 }
